@@ -1,0 +1,16 @@
+from re import T
+
+
+upper_limit = 91 #Any upper limit you want to use
+lower_limit = 24 #Lowest limit for your dataset
+outlier = False #determine if it is an outlier or not
+number = 8 #Can be any value
+
+if number > upper_limit:
+    outlier = True
+if number < lower_limit:
+    outlier = True
+if outlier == True:
+    print(f"{number} is an outlier")
+    
+
